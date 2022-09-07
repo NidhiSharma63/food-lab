@@ -27,6 +27,15 @@ const handleAutoHeroSlide = () =>{
   });
 }
 
+
+const handleAutoTestimonailSlide = () =>{
+  if(testimonialCounter===testimonialSlides.length-1) testimonialCounter=-1;
+  testimonialCounter++
+  testimonialSlides.forEach((img) => {
+    img.style.transform=`translateX(-${testimonialCounter*100}%)`;
+  });
+}
+
 herobannerLeftArrow.addEventListener('click',()=>{
    if(herobannerCounter===0) return;
    herobannerCounter--;
@@ -75,4 +84,7 @@ window.onload= () =>{
   setInterval(()=>{
     handleAutoHeroSlide()
   },5000);
+  setInterval(()=>{
+    handleAutoTestimonailSlide()
+  },7000)
 }
