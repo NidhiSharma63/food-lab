@@ -474,6 +474,9 @@
   font-family: var(--ff-secondary);
   padding: 5rem 0rem;
 }
+.footer .left-section img {
+  width: 10rem;
+}
 .footer .right-section {
   padding: 5rem 0rem;
   width: 50%;
