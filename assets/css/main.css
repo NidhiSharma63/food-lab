@@ -127,6 +127,9 @@
 .hero-content {
   position: relative;
   top: 10rem;
+  left: auto;
+  bottom: auto;
+  right: auto;
   z-index: 3;
   width: 678px;
   margin-left: 10rem;
@@ -237,7 +240,6 @@
 }
 .Intro-section .left-section {
   width: 900px;
-  height: 100px;
   display: grid;
   gap: 0.4rem;
   grid-template-columns: repeat(3, 200px);

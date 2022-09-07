@@ -5,3 +5,11 @@
   justify-content: $justifyContent;
   flex-direction: $flexDirection;
 }
+
+@mixin position($position,$top,$left,$bottom,$right) {
+  position: $position;
+  top:$top;
+  left:$left;
+  bottom: $bottom;
+  right:$right;
+}

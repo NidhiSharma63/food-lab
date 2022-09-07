@@ -20,8 +20,7 @@
 }
 
 .hero-content{
-  position: relative;
-  top: 10rem;
+  @include position($position:relative,$top:10rem,$left:auto,$bottom:auto,$right:auto);
   z-index: 3;
   width: 678px;
   margin-left: 10rem;
