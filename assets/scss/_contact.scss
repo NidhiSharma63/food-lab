@@ -90,10 +90,18 @@
       color: var(--text-color);
       font-size: var(--fs-xs);
       font-weight: 600;
+      span{
+        margin: 0rem .5rem;
+      }
     }
   }   
 }
 
+@media screen and (max-width:1107px) {
+  .contact-section-wrapper{
+    margin-top: 10rem;
+  }
+}
 
 @media screen and (max-width:880px) {
   
@@ -118,7 +126,9 @@
     form{
       div{
         width: 100%;
-
+        label{
+          font-size: 1.6rem;
+        }
         textarea{
           height: 15rem;
         }
@@ -126,9 +136,6 @@
     }
     button{
       padding: .9rem 2rem;
-      span{
-        margin: 0rem .5rem;
-      }
     }
   }
 }

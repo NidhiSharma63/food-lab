@@ -55,8 +55,13 @@ body{
 @media screen and (max-width:650px) {
   :root{
     --fs-lg:3.4rem;
-    --fs-md:4rem;
+    --fs-md:2.7rem;
     --fs-sm:1.5rem;
     --fs-xs:1.2rem
+  }
+}
+@media screen and (max-width:500px) {
+  :root{
+    --fs-md:2.2rem;
   }
 }
