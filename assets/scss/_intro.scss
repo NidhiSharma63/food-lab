@@ -3,6 +3,7 @@
   @include flex($alignItems:center,$justifyContent:space-between,$flexDirection:column);
   gap: 8rem;
   margin-top: 10rem;
+  transition: transform .8s ease-in-out;
   
   h2{
     font-size: var(--fs-md);

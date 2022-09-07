@@ -222,6 +222,7 @@
   flex-direction: column;
   gap: 8rem;
   margin-top: 10rem;
+  transition: transform 0.8s ease-in-out;
 }
 .Intro-section-wrapper h2 {
   font-size: var(--fs-md);
@@ -322,6 +323,7 @@
   flex-direction: column;
   gap: 4rem;
   position: relative;
+  transition: transform 0.8s ease-in-out;
 }
 .testimonial-section-wrapper p {
   font-size: var(--fs-md);
@@ -413,6 +415,7 @@
   width: 100%;
   margin-top: 17rem;
   position: relative;
+  transition: transform 0.8s ease-in-out;
 }
 .contact-section-wrapper .top-left {
   width: 10rem;
@@ -479,10 +482,17 @@
   height: 4rem;
   border: none;
   border-radius: 1rem;
+  padding-left: 1rem;
 }
 .contact-section form div textarea {
   height: 20rem;
   resize: none;
+  padding-top: 1rem;
+}
+.contact-section form div input:focus,
+.contact-section form div textarea:focus {
+  outline: none;
+  border: 1px solid black;
 }
 .contact-section form button {
   background-color: rgb(45, 146, 45);
@@ -638,9 +648,14 @@ body {
   --fs-xs:1.5rem ;
 }
 
+.translateY {
+  transform: translateY(50%);
+}
+
 .main-wrapper {
   max-width: 1440px;
   margin: auto;
+  position: relative;
 }
 
 @media screen and (max-width: 880px) {

@@ -4,6 +4,7 @@
   @include flex($alignItems:center,$justifyContent:center,$flexDirection:column);
   gap: 4rem;
   position: relative;
+  transition: transform .8s ease-in-out;
 
 
   p{
