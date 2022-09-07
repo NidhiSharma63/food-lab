@@ -67,3 +67,27 @@
     }
   }
 }
+
+@media screen and (max-width:1080px) {
+  .testimonial-section{
+    width: 70%;
+  }
+}
+@media screen and (max-width:800px) {
+  .testimonial-section{
+    width: 85%;
+
+    .testimonial-slider-wrapper{
+      .testimonial-slide{
+        img{
+          width: 8rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:500px){
+  .testimonial-section .slider-arrow {
+    top: 30%;
+  }
+}
