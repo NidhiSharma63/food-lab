@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Food-lab | Home</title>
   <link rel="stylesheet" href="./assets/css/main.css">
 </head>
@@ -14,38 +15,89 @@
       <div class="left-section">
         <h1>food lab</h1>
       </div>
-      <div class="right-section">
+      <div class="nav-right-section">
         <ul>
           <li>home</li>
           <li>services</li>
           <li>gallery</li>
           <li>co-traveller</li>
-          <li>faqs</li>
+          <li class="faqs">faqs</li>
+          <li>contact us</li>
+          <li>register</li>
+        </ul>
+      </div>
+      <span class="menu-icon"><i class="fa-solid fa-bars"></i></span>
+    </div>
+    <!-- header end -->
+    <div class="mobile-nav">
+      <button class="close-icon">close</button>
+      <div class="nav-right-section">
+        <ul>
+          <li>home</li>
+          <li>services</li>
+          <li>gallery</li>
+          <li>co-traveller</li>
+          <li class="faqs">faqs</li>
           <li>contact us</li>
           <li>register</li>
         </ul>
       </div>
     </div>
-    <!-- header end -->
+    <!-- mobile nav -->
     <div class="herobanner-section-wrapper">
-
+      <!-- video -->
+      <video autoplay loop plays-inline class="video">
+        <source src="./assets//video/video.mp4" type="video/mp4">
+      </video>
+      <div class="overlay"></div>
+      <!-- video -->
+      <div class="hero-content">
+        <!-- arrow -->
+        <div class="slider-arrow">
+          <span class="left-arrow"><i class="fa-solid fa-arrow-left"></i></span>
+          <span class="right-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+        </div>
+        <!-- arrow -->
+        <div class="herobanner-slider-wrapper">
+          <!-- slide -->
+          <div class="herobanner-slide">
+            <h1>empowering society through science</h1>
+            <p>food point is one point solution for all food safety</p>
+          </div>
+          <div class="herobanner-slide">
+            <h1>empowering society through science</h1>
+            <p>food point is one point solution for all food safety</p>
+          </div>
+          <div class="herobanner-slide">
+            <h1>empowering society through science</h1>
+            <p>food point is one point solution for all food safety</p>
+          </div>
+          <!-- slide -->
+        </div>
+      </div>
     </div>
     <!-- hero banner end -->
     <div class="Intro-section-wrapper">
       <h2>food lab food safety services</h2>
       <div class="Intro-section">
         <div class="left-section">
+          <img src="./assets//Images//fl1.avif" alt="food">
+          <img src="./assets//Images//fl2.avif" alt="food">
+          <img src="./assets//Images//fl3.avif" alt="food">
 
         </div>
         <div class="right-section">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta laudantium eum totam, placeat accusamus at eligendi, molestiae voluptates consequatur voluptatum ipsam non harum assumenda. Illo cupiditate, porro aliquam fugit nostrum tempore quam ex, dolores impedit ipsam laborum beatae consequuntur quis tempora similique sit. Quod ipsum possimus perspiciatis quia omnis beatae libero sed doloremque blanditiis dignissimos placeat, id, harum ducimus. Unde repellat, perspiciatis quibusdam soluta a molestias illo voluptatum hic sunt!
+            Soluta laudantium eum totam, placeat accusamus at eligendi, molestiae voluptates consequatur voluptatum ipsam non harum assumenda. Illo cupiditate, porro aliquam fugit nostrum tempore quam ex, dolores impedit ipsam laborum beatae consequuntur quis tempora similique sit. Quod ipsum possimus perspiciatis quia omnis beatae libero sed doloremque blanditiis dignissimos placeat, id, harum ducimus.
           </p>
         </div>
       </div>
     </div>
     <!-- intro-section end -->
     <div class="contact-section-wrapper">
+      <div class="top-left"></div>
+      <div class="bottom-right"></div>
+
       <div class="contact-section">
         <p>contact us</p>
         <form action="">
@@ -60,8 +112,8 @@
           <button type="submit">send</button>
         </form>
         <div class="bottom-section">
-          <button>message</button>
-          <button>get a callback</button>
+          <button><i class="fa-solid fa-message"></i><span>message</span></button>
+          <button><i class="fa-solid fa-phone"></i><span>get a callback</span></button>
         </div>
       </div>
     </div>
@@ -99,4 +151,5 @@
     <!-- footer end -->
   </div>
 </body>
+<script src="./assets//js/index.js"></script>
 </html>

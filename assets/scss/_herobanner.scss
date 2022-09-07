@@ -1,0 +1,114 @@
+.herobanner-section-wrapper{
+  width: 100%;
+  height:700px;
+  position: relative;
+
+  .overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(37, 37, 37, 0.692);
+  }
+}
+.video{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero-content{
+  position: relative;
+  top: 10rem;
+  z-index: 3;
+  width: 678px;
+  margin-left: 10rem;
+  top: -50rem;
+  height: 30rem;
+
+  .slider-arrow{
+    position: absolute;
+    width: 100%;
+    font-size: var(--fs-sm);
+    color: white;
+    top: 50%;
+    z-index: 5;
+    @include flex($alignItems:center,$justifyContent:space-between,$flexDirection:row);
+
+    i{
+      background-color: rgba(26, 25, 25, 0.459);
+      font-size: var(--fs-sm);
+      padding: 1rem;
+      border-radius: 50%;
+    }
+  }
+
+  .herobanner-slider-wrapper{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin-left: 7rem;
+  }
+}
+
+.herobanner-slide{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform .9s ease-in-out;
+  
+  h1,p{
+    font-size: var(--fs-lg);
+    letter-spacing: .1rem;
+    line-height: 9rem;
+    color: white;
+    text-transform: capitalize;
+    font-family: var(--ff-primary);
+  }
+  p{
+    font-size: var(--fs-sm);
+    font-family: var(--ff-secondary);
+    border-bottom: 1px solid rgba(88, 87, 87, 0.89);
+  }
+}
+
+
+@media screen and (max-width:880px) {
+  
+  .hero-content{
+    width: 70%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width:650px) {
+  .herobanner-section-wrapper{
+    height: 600px;
+  }
+  .hero-content {
+    top: -44rem;
+    width: 90%;
+    .herobanner-slider-wrapper{
+      margin-left: 0rem;
+    }
+
+    .slider-arrow{
+      top: 90%;
+      justify-content: center;
+      gap: 3rem;
+    }
+  }
+
+  .herobanner-slide h1{
+    line-height: 5rem;
+  }
+  .herobanner-slide p {
+    margin-top: 1rem;
+    line-height: 3rem;
+  }
+
+}

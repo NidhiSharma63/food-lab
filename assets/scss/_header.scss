@@ -1,24 +1,93 @@
 .header{
   width: 100%;
+  position: absolute;
   padding: 1rem 7rem;
-  border: 1px solid red;
+  padding-top: 2rem;
+  top:0;
+  z-index: 2;
   @include flex($alignItems:center,$justifyContent:space-between,$flexDirection:row);
 }
 
 .header .left-section{
 
   h1{
-    font-size: 3rem;
+    font-size: 2rem;
     text-transform: capitalize;
+    font-family: var(--ff-primary);
+    color: rgb(28, 226, 28);
   }
 
 }
 
-.header .right-section{
+.menu-icon{
+  display: none;
+  font-size: 2.3rem;
+  color: white;
+}
+.nav-right-section{
   ul{
    @include flex($alignItems:center,$justifyContent:space-between,$flexDirection:row);
     list-style: none;
     gap: 4rem;
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-xs);
+    color: white;
+    
+    li{
+      cursor: pointer;
+      text-transform: capitalize;
+      transition: .2s ease-in;
+
+      &:hover{
+        color: rgb(160, 160, 160);
+      }
+    }
+    .faqs{
+      text-transform: uppercase !important;
+    }
+    
   }
 }
 
+.mobile-nav{
+  overflow: hidden;
+  position: fixed;
+  height: 100vh;
+  width: 30rem;
+  z-index: 6;
+  right: 0;
+  background-color: rgb(20, 20, 20);
+  color: white;
+  transform: translateX(100%);
+  transition: transform .6s ease-in-out;
+  @include flex($alignItems:center,$justifyContent:center,$flexDirection:column);
+  
+  .close-icon{
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    cursor: pointer;
+  } 
+}
+
+
+@media screen and (max-width:920px) {
+  .header .nav-right-section{
+    display: none;
+  }
+  .menu-icon{
+    display: flex;
+  }
+  .nav-right-section{
+    ul{
+      flex-direction: column;
+      font-size: var(--fs-sm);
+    }
+  }
+}
+
+@media screen and (max-width:650px){
+  .header{
+    padding: 2rem;
+  }
+}

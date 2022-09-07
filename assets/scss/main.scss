@@ -26,8 +26,12 @@ body{
   --ff-primary:'Merriweather', serif;
   --ff-secondary:'Work Sans', sans-serif;
 
-  // --fs-lg:3rem;
-  // --fs-md:
+  // --text-color:
+    --text-color:rgb(31, 30, 30);
+  --fs-lg:6rem;
+  --fs-md:4rem;
+  --fs-sm:1.8rem;
+  --fs-xs:1.5rem
 
 }
 
@@ -35,4 +39,24 @@ body{
   max-width: 1440px;
   border: 1px solid black;
   margin: auto;
+}
+
+@media screen and (max-width:880px) {
+  
+  
+  :root{
+    --fs-lg:4.5rem;
+    --fs-md:4rem;
+    --fs-sm:1.5rem;
+    --fs-xs:1.5rem
+  }
+}
+
+@media screen and (max-width:650px) {
+  :root{
+    --fs-lg:3.4rem;
+    --fs-md:4rem;
+    --fs-sm:1.5rem;
+    --fs-xs:1.2rem
+  }
 }
