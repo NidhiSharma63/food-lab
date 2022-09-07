@@ -1,0 +1,21 @@
+.Intro-section-wrapper{
+  width: 100%;
+  @include flex($alignItems:center,$justifyContent:space-between,$flexDirection:column);
+  gap: 3rem;
+}
+.Intro-section{
+  width: 90%;
+  margin: auto;
+  @include flex($alignItems:center,$justifyContent:space-between,$flexDirection:row);
+  gap: 5rem;
+  .left-section{
+    width: 900px;
+    height: 100px;
+    border: 1px solid black;
+  }
+  .right-section{
+    border: 1px solid;
+    width: 80%;
+    font-size: 1.8rem;
+  }
+}

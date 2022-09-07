@@ -1,0 +1,24 @@
+.header{
+  width: 100%;
+  padding: 1rem 7rem;
+  border: 1px solid red;
+  @include flex($alignItems:center,$justifyContent:space-between,$flexDirection:row);
+}
+
+.header .left-section{
+
+  h1{
+    font-size: 3rem;
+    text-transform: capitalize;
+  }
+
+}
+
+.header .right-section{
+  ul{
+   @include flex($alignItems:center,$justifyContent:space-between,$flexDirection:row);
+    list-style: none;
+    gap: 4rem;
+  }
+}
+
