@@ -1,4 +1,4 @@
-# Food-lab
+# Food-lab landing page
 
 ## tools and technologies used
 
