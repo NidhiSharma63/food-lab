@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 @import './mixin';
 @import './header';
@@ -25,15 +25,14 @@ body{
 }
 
 :root{
-  --ff-primary:'Merriweather', serif;
-  --ff-secondary:'Work Sans', sans-serif;
+  --ff-primary:'Poppins', sans-serif;
+  // --ff-secondary:'Work Sans', sans-serif;
 
   --text-color:rgb(31, 30, 30);
   --fs-lg:6rem;
   --fs-md:4rem;
   --fs-sm:1.8rem;
   --fs-xs:1.5rem
-
 }
 
 .translateY{
@@ -43,6 +42,10 @@ body{
   max-width: 1440px;
   margin: auto;
   position: relative;
+}
+
+.show-mobile-nav{
+  transform: translateY(0%) !important;
 }
 
 @media screen and (max-width:880px) {

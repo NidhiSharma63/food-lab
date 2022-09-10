@@ -71,11 +71,15 @@ testimonialRightArrow.addEventListener('click',()=>{
 
 
 menuIcon.addEventListener('click',()=>{
-  mobileNav.style.transform='translateX(0%)'
+  mobileNav.classList.add('show-mobile-nav');
+    closeIcon.style.display='block';
+    menuIcon.style.display='none';
 });
 
 closeIcon.addEventListener('click',()=>{
-  mobileNav.style.transform='translateX(100%)'
+  mobileNav.classList.remove('show-mobile-nav');
+  closeIcon.style.display='none';
+  menuIcon.style.display='block';
 });
 
 window.onload= () =>{

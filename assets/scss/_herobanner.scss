@@ -2,6 +2,10 @@
   width: 100%;
   height:700px;
   position: relative;
+  background-image: url(../Images//herobanner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 
   .overlay{
     position: absolute;
@@ -9,7 +13,8 @@
     width: 100%;
     height: 100%;
     z-index: 1;
-    background-color: rgba(37, 37, 37, 0.692);
+    background-color: rgba(224, 215, 215, 0.349);
+    z-index: 1;
   }
 }
 .video{
@@ -24,8 +29,9 @@
   z-index: 3;
   width: 678px;
   margin-left: 10rem;
-  top: -50rem;
+  top: 20rem;
   height: 30rem;
+  z-index: 2;
 
   .slider-arrow{
     position: absolute;
@@ -65,7 +71,7 @@
     font-size: var(--fs-lg);
     letter-spacing: .1rem;
     line-height: 9rem;
-    color: white;
+    color: rgb(26, 24, 24);
     text-transform: capitalize;
     font-family: var(--ff-primary);
   }
