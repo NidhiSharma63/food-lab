@@ -179,7 +179,7 @@
 }
 .herobanner-slide p {
   font-size: var(--fs-sm);
-  font-family: var(--ff-secondary);
+  font-size: 500;
   border-bottom: 1px solid rgba(88, 87, 87, 0.89);
 }
 
