@@ -6,6 +6,18 @@
   position: relative;
   transition: transform .8s ease-in-out;
 
+  .testimonial-right-img{
+    position: absolute;
+    width: 50rem;
+    height: 10rem;
+    @include position($position:absolute,$top:-10rem,$left:auto,$bottom:auto,$right:-40rem);
+
+
+    img{
+      width: 100%;
+      object-fit: cover;
+    }
+  }
 
   p{
     font-size: var(--fs-md);

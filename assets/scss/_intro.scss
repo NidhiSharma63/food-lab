@@ -10,7 +10,7 @@
     width: 20rem;
     transform: rotate(35deg);
     @include position($position:absolute,$top:3rem,$left:auto,$bottom:auto,$right:-10rem);
-
+    opacity: .3;
     img{
       width: 100%;
       object-fit: cover;
@@ -38,6 +38,11 @@
     img{
       width: 100%;
       object-fit: cover;
+      @include position($position:absolute,$top:-1rem,$left:3rem,$bottom:auto,$right:-10rem);
+    }
+    & img:nth-child(2){
+      @include position($position:absolute,$top:1rem,$left:1rem,$bottom:auto,$right:-10rem);
+
     }
   }
 
@@ -106,7 +111,7 @@
   }
   .Intro-section{
     flex-direction: column;
-    gap: 9rem;
+    gap: 13rem;
 
     .image-bg{
       width: 44rem;
@@ -122,14 +127,14 @@
   }
 }
 
-@media screen and (max-width:724px){
+@media screen and (max-width:740px){
  .Intro-section-wrapper{
   .right-image{
     display: none;
   }
   .Intro-section{
     .image-bg{
-      left:2rem;
+      left:-2rem;
     }
   }
  }
@@ -137,6 +142,7 @@
 
 @media screen and (max-width:600px){
   .Intro-section{
+    gap: 8rem;
     .right-section{
       width: 95%;
     }
@@ -146,9 +152,8 @@
   .Intro-section{
     .image-bg{
       width: 29rem;
-      left: -1rem;
+      left: 0rem;
     }
-    gap: 5rem;
     .left-section{
       height: 200px;
       grid-template-columns: repeat(3,100px);
