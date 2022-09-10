@@ -116,3 +116,15 @@
     }
   }
 }
+
+
+@media screen and (max-width:600px) {
+  .testimonial-section-wrapper{
+    .testimonial-right-img{
+      width: 11rem;
+      right: -4rem;
+      top: -2rem;
+      transform: rotate(40deg);
+    }
+  }
+}
