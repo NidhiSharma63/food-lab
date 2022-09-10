@@ -108,26 +108,30 @@
       </div>
       <p>Testimonial</p>
       <div class="testimonial-section">
-        <!-- arrow -->
-        <div class="slider-arrow">
-          <span class="testinomial-left-arrow"><i class="fa-solid fa-arrow-left"></i></span>
-          <span class="testinomial-right-arrow"><i class="fa-solid fa-arrow-right"></i></span>
-        </div>
-        <!-- arrow -->
-        <div class="testimonial-slider-wrapper">
-          <div class="testimonial-slide">
-            <img src="./assets//Images/user.jpg" alt="user">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita illum inventore tempora explicabo iusto, blanditiis doloremque quia id sint eius, error voluptatibus a, omnis ea fugit quam min.
+          <div class="swiper mySwiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="testimonial-slide">
+                  <img src="./assets//Images/user.jpg" alt="user">
+                   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga ratione nihil distinctio error harum fugit repellat quidem possimus nulla neque cumque aliquid, exercitationem consequatur at iste voluptate saepe dicta? Nam!</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial-slide">
+                  <img src="./assets//Images/user2.jpg" alt="user">
+                   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga ratione nihil distinctio error harum fugit repellat quidem possimus nulla neque cumque aliquid, exercitationem consequatur at iste voluptate saepe dicta? Nam!</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial-slide">
+                  <img src="./assets//Images/user3.jpg" alt="user">
+                   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga ratione nihil distinctio error harum fugit repellat quidem possimus nulla neque cumque aliquid, exercitationem consequatur at iste voluptate saepe dicta? Nam!</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="testimonial-slide">
-            <img src="./assets//Images/user.jpg" alt="user">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita illum inventore tempora explicabo iusto, blanditiis doloremque quia id sint eius, error voluptatibus a, omnis ea fugit quam min.
-          </div>
-          <div class="testimonial-slide">
-            <img src="./assets//Images/user.jpg" alt="user">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita illum inventore tempora explicabo iusto, blanditiis doloremque quia id sint eius, error voluptatibus a, omnis ea fugit quam min.
-          </div>
-        </div>
       </div>
     </div>
 
@@ -192,5 +196,24 @@
 <script src="./assets//js/index.js"></script>
 <script src="./assets//js/anim.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    loop:true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 100,
+      modifier: 2,
+      slideShadows: true,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
 
+</script>
 </html>

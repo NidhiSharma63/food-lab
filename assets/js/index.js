@@ -53,21 +53,21 @@ herobannerRightArrow.addEventListener('click',()=>{
  });
 });
 
-testimonialLeftArrow.addEventListener('click',()=>{
-  if(testimonialCounter===0) return;
-  testimonialCounter--;
-  testimonialSlides.forEach((img) => {
-   img.style.transform=`translateX(-${testimonialCounter*100}%)`;
- });
-});
+// testimonialLeftArrow.addEventListener('click',()=>{
+//   if(testimonialCounter===0) return;
+//   testimonialCounter--;
+//   testimonialSlides.forEach((img) => {
+//    img.style.transform=`translateX(-${testimonialCounter*100}%)`;
+//  });
+// });
 
-testimonialRightArrow.addEventListener('click',()=>{
-  if(testimonialCounter===testimonialSlides.length-1) return;
-  testimonialCounter++;
-  testimonialSlides.forEach((img) => {
-   img.style.transform=`translateX(-${testimonialCounter*100}%)`;
- });
-});
+// testimonialRightArrow.addEventListener('click',()=>{
+//   if(testimonialCounter===testimonialSlides.length-1) return;
+//   testimonialCounter++;
+//   testimonialSlides.forEach((img) => {
+//    img.style.transform=`translateX(-${testimonialCounter*100}%)`;
+//  });
+// });
 
 
 menuIcon.addEventListener('click',()=>{
@@ -84,11 +84,11 @@ closeIcon.addEventListener('click',()=>{
 
 window.onload= () =>{
   setImagePosition(herobannerSlide);
-  setImagePosition(testimonialSlides)
+  // setImagePosition(testimonialSlides)
   setInterval(()=>{
     handleAutoHeroSlide()
   },5000);
   setInterval(()=>{
-    handleAutoTestimonailSlide()
+    // handleAutoTestimonailSlide()
   },7000)
 }
