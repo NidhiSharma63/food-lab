@@ -37,6 +37,7 @@
 
   p{
     font-size: var(--fs-md);
+    text-transform: capitalize;
     font-family: var(--ff-primary);
   }
   form{
@@ -52,7 +53,7 @@
 
       label{
         font-size: 2rem;
-        font-family: var(--ff-secondary);
+        font-family: var(--ff-primary);
         text-transform: capitalize;
       }
       input,

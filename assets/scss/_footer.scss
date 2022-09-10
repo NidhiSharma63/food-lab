@@ -1,34 +1,45 @@
 .footer-section-wrapper{
   width: 100%;
   margin-top: 15rem;
-  padding-bottom: 5rem;
+  height: 10rem;
   color: white;
-  background-color: rgba(34, 33, 33, 0.904);
+  box-shadow: 0px -1px 1px 0px rgb(128, 123, 123);
 }
 .footer{
-  width: 90%;
+  width: 100%;
   margin: auto;
   @include flex($alignItems:flex-start,$justifyContent:space-between,$flexDirection:row);
-
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(22, 21, 21);
+  font-weight: 500;
 
   .left-section{
     @include flex($alignItems:flex-start,$justifyContent:space-between,$flexDirection:column);
     gap: 1rem;
     font-size: var(--fs-sm);
-    font-family: var(--ff-secondary);
-    padding: 5rem 0rem;
-
+    width: 40%;
+    background-color: white;
+    padding: 5rem 8rem;
+    height: 100%;
     img{
-      width: 10rem;
+      width: 20rem;
+    }
+    strong{
+      font-family: var(--ff-primary);
     }
   }
   .right-section{
-    padding: 5rem 0rem;
+    flex-grow: 1;
+    background-color: #F4EEA9;
+    padding: 5rem 8rem;
+    height: 100%;
     width: 50%;
-    @include flex($alignItems:flex-start,$justifyContent:space-between,$flexDirection:row);
-    gap: 3rem;
+    @include flex($alignItems:flex-start,$justifyContent:unset,$flexDirection:row);
+    gap: 7rem;
     font-size: var(--fs-sm);
-    font-family: var(--ff-secondary);
+    strong{
+      font-family: var(--ff-primary);
+    }
     ul{
       list-style: none;
 
@@ -46,15 +57,26 @@
   }
 }
 
+@media screen and (max-width:850px) {
+  .footer{
+    .left-section,
+    .right-section{
+      padding: 2rem 2rem;
+    }
+  }
+}
+
 @media screen and (max-width:630px) {
+  .footer-section-wrapper{
+    height: auto;
+  }
   .footer{
     flex-direction: column;
     align-items: center;
-
     .left-section,
     .right-section{
-      padding: 2rem 0rem;
-      width: 80%;
+      padding: 2rem 4rem;
+      width: 100%;
     }
   }
 

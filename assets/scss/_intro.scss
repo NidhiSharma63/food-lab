@@ -9,6 +9,7 @@
     font-size: var(--fs-md);
     color: var(--text-color);
     font-family: var(--ff-primary);
+    text-transform: capitalize;
   }
 }
 .Intro-section{
@@ -51,7 +52,7 @@
     margin-top: 3rem;
     width: 80%;
     font-size: var(--fs-sm);
-    font-family: var(--ff-secondary);
+    font-family: var(--ff-primary);
     line-height: 3rem;
   }
 }
