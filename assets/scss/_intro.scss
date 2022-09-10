@@ -4,6 +4,18 @@
   gap: 8rem;
   margin-top: 10rem;
   transition: transform .8s ease-in-out;
+  position: relative;
+
+  .right-image{
+    width: 20rem;
+    transform: rotate(35deg);
+    @include position($position:absolute,$top:3rem,$left:auto,$bottom:auto,$right:-10rem);
+
+    img{
+      width: 100%;
+      object-fit: cover;
+    }
+  }
   
   h2{
     font-size: var(--fs-md);
@@ -17,6 +29,18 @@
   margin: auto;
   @include flex($alignItems:center,$justifyContent:space-between,$flexDirection:row);
   gap: 5rem;
+  position: relative;
+
+  .image-bg{
+    width: 50rem;
+    z-index: -1;
+    @include position($position:absolute,$top:-2rem,$left:-6.7rem,$bottom:auto,$right:auto);
+    img{
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
   .left-section{
     width: 900px;
     display: grid;
@@ -59,6 +83,10 @@
 
 @media screen and (max-width:1070px) {
   .Intro-section{
+    .image-bg{
+      width: 40rem;
+      left: -4rem;
+    }
     .left-section{
       grid-template-columns: repeat(3,150px);
       grid-template-rows: repeat(2, 150px);
@@ -71,9 +99,19 @@
 
 @media screen and (max-width:870px){
 
+  .Intro-section-wrapper{
+    .right-image{
+      width: 16rem;
+    }
+  }
   .Intro-section{
     flex-direction: column;
+    gap: 9rem;
 
+    .image-bg{
+      width: 44rem;
+      left: 9rem;
+    }
     .left-section{
       align-self: center;
       width: auto;
@@ -84,6 +122,19 @@
   }
 }
 
+@media screen and (max-width:724px){
+ .Intro-section-wrapper{
+  .right-image{
+    display: none;
+  }
+  .Intro-section{
+    .image-bg{
+      left:2rem;
+    }
+  }
+ }
+}
+
 @media screen and (max-width:600px){
   .Intro-section{
     .right-section{
@@ -92,7 +143,11 @@
   }
 }
 @media screen and (max-width:500px){
-  .Intro-section-wrapper{
+  .Intro-section{
+    .image-bg{
+      width: 29rem;
+      left: -1rem;
+    }
     gap: 5rem;
     .left-section{
       height: 200px;

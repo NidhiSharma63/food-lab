@@ -222,6 +222,21 @@
   gap: 8rem;
   margin-top: 10rem;
   transition: transform 0.8s ease-in-out;
+  position: relative;
+}
+.Intro-section-wrapper .right-image {
+  width: 20rem;
+  transform: rotate(35deg);
+  position: absolute;
+  top: 3rem;
+  left: auto;
+  bottom: auto;
+  right: -10rem;
+}
+.Intro-section-wrapper .right-image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .Intro-section-wrapper h2 {
   font-size: var(--fs-md);
@@ -238,6 +253,21 @@
   justify-content: space-between;
   flex-direction: row;
   gap: 5rem;
+  position: relative;
+}
+.Intro-section .image-bg {
+  width: 50rem;
+  z-index: -1;
+  position: absolute;
+  top: -2rem;
+  left: -6.7rem;
+  bottom: auto;
+  right: auto;
+}
+.Intro-section .image-bg img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .Intro-section .left-section {
   width: 900px;
@@ -279,6 +309,10 @@
 }
 
 @media screen and (max-width: 1070px) {
+  .Intro-section .image-bg {
+    width: 40rem;
+    left: -4rem;
+  }
   .Intro-section .left-section {
     grid-template-columns: repeat(3, 150px);
     grid-template-rows: repeat(2, 150px);
@@ -288,8 +322,16 @@
   }
 }
 @media screen and (max-width: 870px) {
+  .Intro-section-wrapper .right-image {
+    width: 16rem;
+  }
   .Intro-section {
     flex-direction: column;
+    gap: 9rem;
+  }
+  .Intro-section .image-bg {
+    width: 44rem;
+    left: 9rem;
   }
   .Intro-section .left-section {
     align-self: center;
@@ -299,16 +341,28 @@
     font-size: 1.8rem;
   }
 }
+@media screen and (max-width: 724px) {
+  .Intro-section-wrapper .right-image {
+    display: none;
+  }
+  .Intro-section-wrapper .Intro-section .image-bg {
+    left: 2rem;
+  }
+}
 @media screen and (max-width: 600px) {
   .Intro-section .right-section {
     width: 95%;
   }
 }
 @media screen and (max-width: 500px) {
-  .Intro-section-wrapper {
+  .Intro-section {
     gap: 5rem;
   }
-  .Intro-section-wrapper .left-section {
+  .Intro-section .image-bg {
+    width: 29rem;
+    left: -1rem;
+  }
+  .Intro-section .left-section {
     height: 200px;
     grid-template-columns: repeat(3, 100px);
     grid-template-rows: repeat(2, 100px);
@@ -443,7 +497,7 @@
   margin: auto;
   padding: 3rem;
   border-radius: 1rem;
-  background-color: rgb(166, 207, 171);
+  background-color: #A7C8AB;
   display: flex;
   align-items: center;
   justify-content: space-between;
