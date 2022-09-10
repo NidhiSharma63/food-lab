@@ -93,7 +93,9 @@
 }
 @media screen and (max-width: 650px) {
   .header {
-    padding: 2rem;
+    padding: 1rem;
+    width: 99%;
+    margin: auto;
   }
 }
 .herobanner-section-wrapper {
