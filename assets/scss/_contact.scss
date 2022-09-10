@@ -14,13 +14,6 @@
       width: 100%;
       object-fit: cover;
     }
-    // height: 20rem;
-    // top: 0;
-    // left: -5rem;
-    // background-color: rgb(139, 170, 143);
-    // position: absolute;
-    // border-bottom-right-radius: 36rem;
-    // border-top-right-radius: 38rem;
   }
   .bottom-right{
     position: absolute;
@@ -153,5 +146,10 @@
     button{
       padding: .9rem 2rem;
     }
+  }
+}
+@media screen and (max-width:370px) {
+  .contact-section{
+    padding: 2rem 2rem;
   }
 }
