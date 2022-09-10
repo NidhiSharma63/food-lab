@@ -6,14 +6,21 @@
   
 
   .top-left{
-    width: 10rem;
-    height: 20rem;
-    top: 0;
-    left: -5rem;
-    background-color: rgb(139, 170, 143);
-    position: absolute;
-    border-bottom-right-radius: 36rem;
-    border-top-right-radius: 38rem;
+    width: 32rem;
+    
+    @include position($position:absolute,$top:0,$left:-24rem,$bottom:auto,$right:auto);
+    transform: rotate(212deg);
+    img{
+      width: 100%;
+      object-fit: cover;
+    }
+    // height: 20rem;
+    // top: 0;
+    // left: -5rem;
+    // background-color: rgb(139, 170, 143);
+    // position: absolute;
+    // border-bottom-right-radius: 36rem;
+    // border-top-right-radius: 38rem;
   }
   .bottom-right{
     position: absolute;

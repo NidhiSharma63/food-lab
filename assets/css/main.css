@@ -505,14 +505,18 @@
   transition: transform 0.8s ease-in-out;
 }
 .contact-section-wrapper .top-left {
-  width: 10rem;
-  height: 20rem;
-  top: 0;
-  left: -5rem;
-  background-color: rgb(139, 170, 143);
+  width: 32rem;
   position: absolute;
-  border-bottom-right-radius: 36rem;
-  border-top-right-radius: 38rem;
+  top: 0;
+  left: -24rem;
+  bottom: auto;
+  right: auto;
+  transform: rotate(212deg);
+}
+.contact-section-wrapper .top-left img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .contact-section-wrapper .bottom-right {
   position: absolute;
