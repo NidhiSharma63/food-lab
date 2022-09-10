@@ -65,7 +65,7 @@
   right: 0;
   background-color: white;
   z-index: 3;
-  color: white;
+  color: #519259;
   transform: translateY(-200%);
   transition: transform 0.3s ease-in-out;
   display: flex;
