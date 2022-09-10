@@ -762,8 +762,7 @@ html {
   font-size: 62.5%;
 }
 
-body,
-html {
+body {
   overflow-x: hidden;
 }
 
@@ -807,6 +806,9 @@ html {
   }
 }
 @media screen and (max-width: 500px) {
+  html {
+    overflow-x: hidden;
+  }
   :root {
     --fs-md:2.2rem;
   }
